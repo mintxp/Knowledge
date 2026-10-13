@@ -1,0 +1,6 @@
+{
+  "name": "Software Engineer Handbook (คู่มือวิศวกรรมซอฟต์แวร์)",
+  "description": "คู่มือสำหรับ Software Engineer สไตล์ Nextra รวบรวมสถาปัตยกรรมระบบ Login & Session, ระบบ Logging & Audit Trail และ Docker สำหรับทีมพัฒนา พร้อม Prompt และเครื่องมือจำลอง",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
