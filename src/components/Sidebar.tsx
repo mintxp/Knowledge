@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, FileText, Container, Server, Terminal, Sparkles, Search, BookOpen, Layers } from 'lucide-react';
+import { ShieldCheck, FileText, Container, Server, Terminal, FileCode, Globe, Workflow, Sparkles, Search, BookOpen, Layers } from 'lucide-react';
 import { DOCS_SECTIONS } from '../data/docsContent';
 
 interface SidebarProps {
@@ -29,6 +29,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
         return <Server className="w-4 h-4 text-violet-500 shrink-0" />;
       case 'Terminal':
         return <Terminal className="w-4 h-4 text-amber-500 shrink-0" />;
+      case 'FileCode':
+        return <FileCode className="w-4 h-4 text-emerald-500 shrink-0" />;
+      case 'Globe':
+        return <Globe className="w-4 h-4 text-rose-500 shrink-0" />;
+      case 'Workflow':
+        return <Workflow className="w-4 h-4 text-indigo-500 shrink-0" />;
       default:
         return <BookOpen className="w-4 h-4 text-slate-400 shrink-0" />;
     }

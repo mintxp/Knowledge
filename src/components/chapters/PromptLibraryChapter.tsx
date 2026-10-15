@@ -63,7 +63,7 @@ export const PromptLibraryChapter: React.FC = () => {
       <section className="mb-12">
         <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
           <BookOpen className="w-5 h-5 text-indigo-500" />
-          Master Prompts ทั้ง 4 หัวข้อหลักระดับ Production
+          คลัง Master Prompts ของทุกหัวข้อคู่มือ (SWE Master Prompts)
         </h2>
 
         <div className="space-y-6">

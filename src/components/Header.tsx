@@ -49,26 +49,26 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Zone 2: 4-5 clean single-line nav links */}
-        <nav className="hidden md:flex items-center gap-6 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400">
+        <nav className="hidden md:flex items-center gap-5 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400">
           <button
-            onClick={() => onSelectChapter('login-session-architecture')}
+            onClick={() => onSelectChapter('nodejs-production-guide')}
             className={`transition-colors whitespace-nowrap shrink-0 cursor-pointer ${
-              activeId === 'login-session-architecture'
+              activeId === 'nodejs-production-guide'
                 ? 'text-indigo-600 dark:text-indigo-400 font-semibold'
                 : 'hover:text-slate-900 dark:hover:text-white'
             }`}
           >
-            Login & Session
+            Node.js
           </button>
           <button
-            onClick={() => onSelectChapter('logging-audit-trail')}
+            onClick={() => onSelectChapter('angular-development-guide')}
             className={`transition-colors whitespace-nowrap shrink-0 cursor-pointer ${
-              activeId === 'logging-audit-trail'
+              activeId === 'angular-development-guide'
                 ? 'text-indigo-600 dark:text-indigo-400 font-semibold'
                 : 'hover:text-slate-900 dark:hover:text-white'
             }`}
           >
-            Logging & Audit
+            Angular
           </button>
           <button
             onClick={() => onSelectChapter('docker-for-teams')}
@@ -78,27 +78,17 @@ export const Header: React.FC<HeaderProps> = ({
                 : 'hover:text-slate-900 dark:hover:text-white'
             }`}
           >
-            Docker สำหรับทีม
-          </button>
-          <button
-            onClick={() => onSelectChapter('nodejs-production-guide')}
-            className={`transition-colors whitespace-nowrap shrink-0 cursor-pointer ${
-              activeId === 'nodejs-production-guide'
-                ? 'text-indigo-600 dark:text-indigo-400 font-semibold'
-                : 'hover:text-slate-900 dark:hover:text-white'
-            }`}
-          >
-            Node.js Guide
+            Docker
           </button>
           <button
             onClick={() => onSelectChapter('cli-cheat-sheet')}
             className={`transition-colors whitespace-nowrap shrink-0 cursor-pointer ${
-              activeId === 'cli-cheat-sheet'
+              activeId === 'cli-cheat-sheet' || activeId === 'windows-linux-commands'
                 ? 'text-indigo-600 dark:text-indigo-400 font-semibold'
                 : 'hover:text-slate-900 dark:hover:text-white'
             }`}
           >
-            CLI Cheat Sheet
+            CLI Reference
           </button>
           <button
             onClick={() => onSelectChapter('prompt-library')}

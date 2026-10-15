@@ -13,6 +13,10 @@ import { LoggingChapter } from './components/chapters/LoggingChapter';
 import { DockerChapter } from './components/chapters/DockerChapter';
 import { NodeJsChapter } from './components/chapters/NodeJsChapter';
 import { CliCheatSheetChapter } from './components/chapters/CliCheatSheetChapter';
+import { WindowsLinuxCommandsChapter } from './components/chapters/WindowsLinuxCommandsChapter';
+import { BatchScriptingChapter } from './components/chapters/BatchScriptingChapter';
+import { AngularDevelopmentChapter } from './components/chapters/AngularDevelopmentChapter';
+import { AutomataChapter } from './components/chapters/AutomataChapter';
 import { PromptLibraryChapter } from './components/chapters/PromptLibraryChapter';
 import { DOCS_SECTIONS } from './data/docsContent';
 import { ArrowLeft, ArrowRight, BookOpen, Sparkles } from 'lucide-react';
@@ -144,6 +148,22 @@ export default function App() {
 
           {activeChapterId === 'cli-cheat-sheet' && (
             <CliCheatSheetChapter promptText={currentSection?.promptText || ''} />
+          )}
+
+          {activeChapterId === 'windows-linux-commands' && (
+            <WindowsLinuxCommandsChapter promptText={currentSection?.promptText || ''} />
+          )}
+
+          {activeChapterId === 'batch-scripting-guide' && (
+            <BatchScriptingChapter promptText={currentSection?.promptText || ''} />
+          )}
+
+          {activeChapterId === 'angular-development-guide' && (
+            <AngularDevelopmentChapter promptText={currentSection?.promptText || ''} />
+          )}
+
+          {activeChapterId === 'automata-state-machine' && (
+            <AutomataChapter promptText={currentSection?.promptText || ''} />
           )}
 
           {activeChapterId === 'prompt-library' && <PromptLibraryChapter />}

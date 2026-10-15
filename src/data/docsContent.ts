@@ -146,5 +146,104 @@ Flow การทำงานตั้งแต่ User กรอกรหัส
       { id: 'production-tips', title: '7. ข้อควรระวังและ Best Practices ในการใช้ CLI บน Production', level: 2 },
       { id: 'original-prompt', title: 'ตัวอย่าง Prompt สำหรับ AI Generation', level: 2 }
     ]
+  },
+  {
+    id: 'windows-linux-commands',
+    title: 'รวมชุดคำสั่งของ Windows และ Linux สำหรับวิศวกรซอฟต์แวร์',
+    shortTitle: 'คำสั่ง Windows & Linux',
+    category: 'DevOps & Systems',
+    iconName: 'Terminal',
+    readingTime: '12 นาที',
+    lastUpdated: 'ตุลาคม 2026',
+    promptText: `ช่วยเขียนบทความคู่มือภาษาไทยในรูปแบบไฟล์ MDX สำหรับหัวข้อ 'รวมชุดคำสั่งของ Windows และ Linux สำหรับวิศวกรซอฟต์แวร์' โดยครอบคลุม:
+1. รวมชุดคำสั่งของ Windows (CMD & PowerShell): การจัดการไฟล์, Network, Process, Environment Variables, และ Service
+2. รวมชุดคำสั่งของ Linux (Bash CLI สำหรับ DevOps): การจัดการ Process, Network & Port, สิทธิ์ไฟล์ (Permissions), Disk Usage, และ Systemd Service
+3. ตารางเปรียบเทียบคำสั่งที่เทียบเท่ากันระหว่าง Windows และ Linux (Side-by-side comparison)
+4. เทคนิคการแก้ปัญหาเฉพาะทาง เช่น หา Process ที่จอง Port ไว้แล้ว Kill ทิ้ง`,
+    description: 'คัมภีร์รวบรวมคำสั่ง CLI สำคัญของทั้ง Windows (CMD/PowerShell) และ Linux (Bash) พร้อมตารางเทียบเคียงคำสั่งข้ามแพลตฟอร์ม และเทคนิคแก้ปัญหาพอร์ตชน',
+    headings: [
+      { id: 'windows-commands', title: '1. รวมชุดคำสั่งของ Windows (CMD & PowerShell)', level: 2 },
+      { id: 'linux-commands', title: '2. รวมชุดคำสั่งของ Linux (Bash สำหรับ DevOps)', level: 2 },
+      { id: 'cross-platform', title: '3. ตารางเปรียบเทียบคำสั่ง Windows vs Linux ที่ทำงานเหมือนกัน', level: 2 },
+      { id: 'port-kill', title: '4. เทคนิคแก้ปัญหา Port ชน และปิด Process ที่ค้าง (Port Killing)', level: 2 },
+      { id: 'original-prompt', title: 'ตัวอย่าง Prompt สำหรับ AI Generation', level: 2 }
+    ]
+  },
+  {
+    id: 'batch-scripting-guide',
+    title: 'วิธีเขียนสคริปต์ Batch File (.bat) สำหรับ Windows',
+    shortTitle: 'เขียน Batch File (.bat)',
+    category: 'Automation & Scripting',
+    iconName: 'FileCode',
+    readingTime: '10 นาที',
+    lastUpdated: 'ตุลาคม 2026',
+    promptText: `ช่วยเขียนบทความคู่มือภาษาไทยในรูปแบบไฟล์ MDX สำหรับหัวข้อ 'วิธีเขียนสคริปต์ Batch File (.bat) สำหรับ Windows สำหรับงาน Automation ของ Developer' โดยครอบคลุม:
+1. ไวยากรณ์พื้นฐาน: @echo off, การประกาศและเรียกใช้ตัวแปร (set, %VAR%), delayed expansion (!VAR!), ตัวแปรพิเศษ (%~dp0, %1, %2)
+2. การควบคุมเงื่อนไขและการวนลูป: IF / ELSE, IF EXIST, GOTO, Labels, และลูป FOR
+3. การจัดการ Error Handling และตรวจสอบ %ERRORLEVEL%
+4. ตัวอย่างสคริปต์ใช้งานจริงสำหรับทีมพัฒนา: สคริปต์เริ่มระบบ Dev อัตโนมัติ (start-dev.bat), สคริปต์สำรองข้อมูล (backup.bat), สคริปต์ล้าง node_modules (clean.bat)
+5. การขอสิทธิ์ Administrator (UAC Elevation) ภายในไฟล์ Batch`,
+    description: 'คู่มือสอนเขียนสคริปต์ Batch (.bat / .cmd) บน Windows ตั้งแต่พื้นฐานคำสั่ง เงื่อนไข ลูป ไปจนถึง 3 ตัวอย่างสคริปต์ Automation ที่ Developer ใช้งานได้จริง',
+    headings: [
+      { id: 'batch-basics', title: '1. ไวยากรณ์และโครงสร้างพื้นฐาน (@echo off, ตัวแปร, %~dp0)', level: 2 },
+      { id: 'control-flow', title: '2. การควบคุมเงื่อนไข IF / ELSE, GOTO และการวนลูป FOR', level: 2 },
+      { id: 'error-handling', title: '3. การดักจับ Error และรหัส %ERRORLEVEL%', level: 2 },
+      { id: 'automation-scripts', title: '4. 3 ตัวอย่างสคริปต์ Batch ใช้งานจริงสำหรับ Developer', level: 2 },
+      { id: 'script-run-as-admin', title: '5. เทคนิคการขอสิทธิ์ Admin (UAC Elevation) ในสคริปต์', level: 2 },
+      { id: 'original-prompt', title: 'ตัวอย่าง Prompt สำหรับ AI Generation', level: 2 }
+    ]
+  },
+  {
+    id: 'angular-development-guide',
+    title: 'คู่มือพัฒนา Software ด้วย Angular (Modern Architecture)',
+    shortTitle: 'พัฒนา Software ด้วย Angular',
+    category: 'Frontend & Angular',
+    iconName: 'Globe',
+    readingTime: '14 นาที',
+    lastUpdated: 'ตุลาคม 2026',
+    promptText: `ช่วยเขียนบทความคู่มือภาษาไทยในรูปแบบไฟล์ MDX สำหรับหัวข้อ 'คู่มือพัฒนา Software ด้วย Angular ระดับ Production' โดยครอบคลุม:
+1. รวมคำสั่ง Angular CLI ที่จำเป็นในการพัฒนา
+2. การวางโครงสร้างโปรเจกต์ Modern Angular (Clean Architecture: Core, Features, Shared)
+3. สถาปัตยกรรม Standalone Components, Directives & Pipes ยุคใหม่ (ไร้ NgModule)
+4. การจัดการ State ด้วย Angular Signals (signal, computed, effect) เทียบกับ RxJS Observables
+5. การสร้าง Functional HTTP Interceptors สำหรับแนบ JWT Bearer Token และดักจับ Error 401
+6. การจัดการ Routing แบบ Lazy Loading และ Functional Route Guards (canActivate)
+7. การทำ Production Build และ Containerization ด้วย Docker + Nginx`,
+    description: 'คู่มือพัฒนา Frontend ด้วย Angular ยุคใหม่ เจาะลึก Standalone Components, Angular Signals, Functional HTTP Interceptors, Routing Guards และการ Deploy ด้วย Nginx',
+    headings: [
+      { id: 'angular-cli', title: '1. ตารางคำสั่ง Angular CLI ที่จำเป็น', level: 2 },
+      { id: 'clean-architecture', title: '2. โครงสร้างโปรเจกต์ Modern Angular (Core, Features, Shared)', level: 2 },
+      { id: 'standalone-components', title: '3. สถาปัตยกรรม Standalone Components (ไร้ NgModule)', level: 2 },
+      { id: 'signals-state', title: '4. การจัดการ State ด้วย Angular Signals เทียบกับ RxJS', level: 2 },
+      { id: 'http-interceptors', title: '5. Functional HTTP Interceptor (JWT & Error Handling)', level: 2 },
+      { id: 'routing-guards', title: '6. Routing แบบ Lazy Loading & Functional Guards', level: 2 },
+      { id: 'production-docker', title: '7. Docker Multi-stage & Nginx Configuration สำหรับ Angular', level: 2 },
+      { id: 'original-prompt', title: 'ตัวอย่าง Prompt สำหรับ AI Generation', level: 2 }
+    ]
+  },
+  {
+    id: 'automata-state-machine',
+    title: 'ทฤษฎีออโตมาตา (Automata Theory) และการออกแบบ State Machine ในงาน Software',
+    shortTitle: 'Automata & State Machine',
+    category: 'Computer Science & Architecture',
+    iconName: 'Workflow',
+    readingTime: '13 นาที',
+    lastUpdated: 'ตุลาคม 2026',
+    promptText: `ช่วยเขียนบทความคู่มือภาษาไทยในรูปแบบไฟล์ MDX สำหรับหัวข้อ 'ทฤษฎีออโตมาตา (Automata Theory) และการออกแบบ State Machine ในงาน Software' โดยครอบคลุม:
+1. ความสำคัญของ Automata ต่อวิศวกรซอฟต์แวร์ (Regex Engine, Lexical Tokenizer, Order Lifecycle)
+2. การออกแบบ Deterministic Finite Automata (DFA) สำหรับตรวจสอบความถูกต้องของ Email (Local Part, @, Domain Name, TLD) พร้อมตารางเปลี่ยนสถานะ (Transition Table)
+3. การออกแบบ Finite State Machine (FSM) ในระบบ E-Commerce (Order Lifecycle) พร้อมป้องกัน Illegal State Transitions
+4. การประยุกต์ใช้ใน Lexer Tokenizer สำหรับตัวเลขทศนิยม
+5. ตัวอย่างโค้ด TypeScript และห้องทดลองจำลองแบบ Interactive`,
+    description: 'คู่มือประยุกต์ทฤษฎี DFA และ FSM เข้ากับการเขียนโปรแกรมจริง: ออกแบบ Email Validation Automata, Order Lifecycle State Machine และ Interactive Flowchart',
+    headings: [
+      { id: 'overview', title: '1. บทนำ: ทำไมวิศวกรซอฟต์แวร์ต้องเข้าใจ Automata?', level: 2 },
+      { id: 'email-automata', title: '2. การออกแบบ DFA สำหรับตรวจสอบ Email Validation', level: 2 },
+      { id: 'order-lifecycle', title: '3. การออกแบบ Finite State Machine (Order Lifecycle)', level: 2 },
+      { id: 'compiler-lexer', title: '4. การประยุกต์ใช้ Automata ใน Lexer / Tokenizer', level: 2 },
+      { id: 'circuit-breaker-fsm', title: '5. State Machine ใน Microservices (Circuit Breaker)', level: 2 },
+      { id: 'production-rules', title: '6. กฎเหล็กและข้อพึงปฏิบัติบน Production', level: 2 },
+      { id: 'original-prompt', title: 'ตัวอย่าง Prompt สำหรับ AI Generation', level: 2 }
+    ]
   }
 ];
